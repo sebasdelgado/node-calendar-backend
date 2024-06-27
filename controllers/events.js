@@ -42,7 +42,7 @@ const actualizarEvento = async ( req, res = response) => {
 
     try {
 
-        const evento = await  Evento.findById( eventoId );
+        const evento = await Evento.findById( eventoId );
 
         if ( !evento ) {
             return res.status(404).json({
